@@ -1,15 +1,1 @@
-
-{
-"homepage": "https://ciphergrind.github.io/coin-exchange-1",
-
-"scripts": {
-"predeploy": "npm run build",
-"deploy": "gh-pages -d build"
-},
-
-"devDependencies": {
-    "gh-pages": "^4.0.0"
-
-  }
-
-}
+{"homepage":"https://ciphergrind.github.io/CryptoSquirrelsNFTMaker","scripts":{"predeploy":"npm run build","deploy":"gh-pages -d build"},"devDependencies":{"gh-pages":"^4.0.0"}}
