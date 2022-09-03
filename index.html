@@ -1,0 +1,174 @@
+<html lang="en">
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squirrel Maker </title>
+  <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <script src="assets/bootstrap/js/popper.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="assets/css/mystyle.css">
+
+  <link rel="stylesheet" href="assets/css/mystyle.css">
+  <link rel="stylesheet" href="assets/css/cats.css">
+  <link rel="stylesheet" href="assets/css/colors.css">
+  <link rel="stylesheet" href="assets/css/factory.css">
+  <link rel="stylesheet" href="assets/css/frontend.css">
+</head>
+
+<body>
+    <div class="container p-1" style="margin-top: 1vh;margin-bottom: 5vh;">
+        <div align="center">
+            <h3 class="c-white">Crypto Squirrel Factory</h3>
+            <p class="c-white">Create your custom Crypto Squirrel</p>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col-lg-6 catBox m-auto squirrelBox">
+            <div class="bg1">
+            
+                <div class="squirrel">
+                    <div class="ears">
+                        <div class="leftEar" >
+                            <div class="innerLeftEar"></div> 
+                        </div>
+                        <div class="rightEar">
+                            <div class="innerRightEar"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="face" class="face">
+                        <div class="eyes">
+                            <div class="eye">
+                                <div class="pupils"></div>
+                            </div>
+                            <div class="eye">
+                                <div class="pupils"></div>
+                            </div>
+                        </div>
+                        <div class="nose"></div>
+                        <div class="mouth">
+                            <div class="leftTooth"></div>
+                            <div class="rightTooth"></div>
+                        </div>
+                        <!-- <div class="cheeks">
+                            <div class="leftCheek"></div>
+                            <div class="rightCheek"></div>
+                        </div> -->
+                        
+                    </div>
+                    <div id="tail">
+                        <div class="innerTail">
+                            <div class="innerTail2">
+                                <div class="innerTail3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="body">
+                        <div class="belly"></div>
+                    </div>
+                    <div id="feet">
+                        <div class="leftFoot">
+                            <div class="toe3"></div>
+                            <div class="toe4"></div>
+                        </div>
+                        <div class="rightFoot">
+                            <div class="toe1"></div>
+                            <div class="toe2"></div>
+                        </div>
+                        <div class="rightThigh"></div>
+                    </div>
+                    <div id="arms">
+                        <div class="leftArm"></div>
+                        <div id="coin">
+                            <div class="bitcoin">B</div>
+                            <div class="bitcoin1">|</div>
+                            <div class="bitcoin2">|</div>
+                        </div>
+                        <div class="rightArm">
+                            <div class="finger2"></div>
+                            <div class="finger1"></div>
+                        </div>
+                    </div>  
+                </div>
+                <br>
+                <div class="dnaDiv" id="catDNA">
+                    <b>
+                    DNA:
+                    <!-- Colors -->
+                        <span id="dnahead"></span>
+                        <span id="dnabody"></span>
+                        <span id="dnatail"></span>
+                        <span id="dnabg"></span>
+                    
+                        <!-- Cattributes -->
+                        <span id="dnashape"></span>
+                        <span id="dnadecoration"></span>
+                        <span id="dnadecorationMid"></span>
+                        <span id="dnadecorationSides"></span>
+                        <span id="dnadanimation"></span>
+                        <span id="dnaspecial"></span>
+                    </b>
+                </div>
+            </div>
+            </div>
+            
+        <div class="col-lg-5 cattributes m-2 light-b-shadow">
+
+    
+
+        <!-- Cat colors -->
+        <div id="catColors">
+            <div class="form-group">
+                <label for="formControlRange">
+                    <b class="whiteText">Head and Belly</b>
+                    <span class="badge badge-danger ml-2" id="headcode"></span>
+                    <span id="headAndBellyColorRBG"></span>
+                </label>
+                <input type="range" min="10" max="98" 
+                    class="form-control-range" id="headBellyColor" />
+            <br>
+                <label for="formControlRange">
+                    <b class="whiteText">Body and Limbs</b>
+                    <span class="badge badge-danger ml-2" id="bodycode"></span>
+                    <span id="bodyAndLimbsColorRBG"></span>
+                </label>
+                <input type="range" min="10" max="98" 
+                    class="form-control-range" id="bodyLimbsColor">
+            <br>
+                <label for="formControlRange">
+                    <b class="whiteText">Tail and Ears</b>
+                    <span class="badge badge-danger ml-2" id="tailcode"></span>
+                    <span id="tailAndEarsColorRBG"></span>
+                </label>
+                <input type="range" min="10" max="98" 
+                    class="form-control-range" id="tailEarsColor">  
+            <br>
+                <label for="formControlRange">
+                    <b class="whiteText">Background</b>
+                    <span class="badge badge-danger ml-2" id="bgcode"></span>
+                    <span id="bgColorRBG"></span>
+                </label>
+                <input type="range" min="10" max="98" 
+                    class="form-control-range" id="bgColor">  
+            </div>
+        </div>
+
+    </div>
+</div>
+<br>
+
+    <footer align="left">
+        <p>Moralis Academy 2022</p>
+    </footer>
+
+</body>
+
+
+  <script src="assets/js/colors.js"></script>
+  <script src="assets/js/catSettings.js"></script>
+  <script src="assets/js/catFactory.js"></script>
+
+</html>

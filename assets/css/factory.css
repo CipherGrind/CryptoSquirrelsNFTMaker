@@ -1,0 +1,19 @@
+.catBox {
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 60px;
+}
+
+.cattributes {
+    padding: 25px;
+    background-color: #282828;
+    border-radius: 10px;
+}
+
+.dnaDiv {
+    position: absolute;
+    left:20px;
+    bottom: 5px;
+
+}
