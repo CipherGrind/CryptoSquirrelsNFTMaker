@@ -2,46 +2,44 @@
 var colors = Object.values(allColors()) 
 
 var defaultDNA = {
-    "headBellyColor" : 10,
     "bodyLimbsColor" : 13,
-    "tailEarsColor" : 96,
+    "tailBellyColor" : 96,
+    "surfBoardColor" : 14,
     "bgColor" : 90,
     //Cattributes
     "eyesShape" : 1,
-    "decorationPattern" : 1,
-    "decorationMidcolor" : 13,
-    "decorationSidescolor" : 13,
-    "animation" :  1,
+    "tailspinShape" : 1,
+    "teethShape" : 1,
+
+    "animation" :  8,
     "lastNum" :  1
     }
 
 // when page load
 $( document ).ready(function() {
-  $('#dnahead').html(defaultDNA.headBellyColor);
   $('#dnabody').html(defaultDNA.bodyLimbsColor);
-  $('#dnatail').html(defaultDNA.tailEarsColor);
+  $('#dnatail').html(defaultDNA.tailBellyColor);
+  $('#dnasurf').html(defaultDNA.surfBoardColor);
   $('#dnabg').html(defaultDNA.bgColor);
-    
-//   $('#dnashape').html(defaultDNA.eyesShape)
-//   $('#dnadecoration').html(defaultDNA.decorationPattern)
-//   $('#dnadecorationMid').html(defaultDNA.decorationMidcolor)
-//   $('#dnadecorationSides').html(defaultDNA.decorationSidescolor)
-//   $('#dnaanimation').html(defaultDNA.animation)
-//   $('#dnaspecial').html(defaultDNA.lastNum)
+  $('#dnaeyes').html(defaultDNA.eyesShape);
+  $('#dnatailspin').html(defaultDNA.tailspinShape);
+  $('#dnateeth').html(defaultDNA.teethShape);
+
+   $('#dnaanimation').html(defaultDNA.animation);
+   $('#dnaspecial').html(defaultDNA.lastNum);
 
   renderCat(defaultDNA)
 });
 
 function getDna(){
     var dna = ''
-    dna += $('#dnahead').html()
     dna += $('#dnabody').html()
     dna += $('#dnatail').html()
+    dna += $('#dnasurf').html()
     dna += $('#dnabg').html()
-    dna += $('#dnashape').html()
-    dna += $('#dnadecoration').html()
-    dna += $('#dnadecorationMid').html()
-    dna += $('#dnadecorationSides').html()
+    dna += $('#dnaeyes').html()
+    dna += $('#dnatailspin').html()
+    dna += $('#dnateeth').html()
     dna += $('#dnaanimation').html()
     dna += $('#dnaspecial').html()
 
@@ -49,25 +47,39 @@ function getDna(){
 }
 
 function renderCat(dna){
-    headColor(colors[dna.headBellyColor],dna.headBellyColor)
-    $('#headBellyColor').val(dna.headBellyColor)
-
     bodyLimbsColor(colors[dna.bodyLimbsColor],dna.bodyLimbsColor)
     $('#bodyLimbsColor').val(dna.bodyLimbsColor)
 
-    tailEarsColor(colors[dna.tailEarsColor],dna.tailEarsColor)
-    $('#tailEarsColor').val(dna.tailEarsColor)
+    tailBellyColor(colors[dna.tailBellyColor],dna.tailBellyColor)
+    $('#tailBellyColor').val(dna.tailBellyColor)
+
+    surfBoardColor(colors[dna.surfBoardColor],dna.surfBoardColor)
+    $('#surfBoardColor').val(dna.surfBoardColor)
 
     bgColor(colors[dna.bgColor],dna.bgColor)
     $('#bgColor').val(dna.bgColor)
+
+    eyeVariation(dna.eyesShape)
+    $('#eyesShape').val(dna.eyesShape)
+    var eyeShapeText = ($('#eyesShape').val())
+    $('#eyeShapeText').html(eyeShapeText)
+    console.log(eyeShapeText)
+
+    tailspinVariation(dna.tailspinShape)
+    $('#tailspinShape').val(dna.tailspinShape)
+    var tailspinShapeText = ($('#tailspinShape').val())
+    $('#tailspinShapeText').html(tailspinShapeText)
+    console.log(tailspinShapeText)
+
+    teethVariation(dna.teethShape)
+    $('#teethShape').val(dna.teethShape)
+    var teethShapeText = ($('#teethShape').val())
+    $('#teethShapeText').html(teethShapeText)
+    console.log(teethShapeText)
+
 }
 
-// Changing cat colors
-$('#headBellyColor').change(()=>{
-    console.log( $('#headBellyColor').val() )
-    var colorVal = $('#headBellyColor').val()
-    headColor(colors[colorVal],colorVal)
-})
+// Changing squirrel colors
 
 $('#bodyLimbsColor').change(()=>{
   console.log( $('#bodyLimbsColor').val() )
@@ -75,14 +87,47 @@ $('#bodyLimbsColor').change(()=>{
   bodyLimbsColor(colors[colorVal],colorVal)
 })
 
-$('#tailEarsColor').change(()=>{
-  console.log( $('#tailEarsColor').val() )
-  var colorVal = $('#tailEarsColor').val()
-  tailEarsColor(colors[colorVal],colorVal)
+$('#tailBellyColor').change(()=>{
+  console.log( $('#tailBellyColor').val() )
+  var colorVal = $('#tailBellyColor').val()
+  tailBellyColor(colors[colorVal],colorVal)
+})
+
+$('#surfBoardColor').change(()=>{
+  console.log( $('#surfBoardColor').val() )
+  var colorVal = $('#surfBoardColor').val()
+  surfBoardColor(colors[colorVal],colorVal)
 })
 
 $('#bgColor').change(()=>{
   console.log( $('#bgColor').val() )
   var colorVal = $('#bgColor').val()
   bgColor(colors[colorVal],colorVal)
+})
+
+
+// Changing squirrel shape
+
+$('#eyesShape').change(()=>{
+  console.log( $('#eyesShape').val() )
+  var shape = parseInt($('#eyesShape').val()) //between 1 and 9
+  eyeVariation(shape)
+  var eyeShapeText = ($('#eyesShape').val())
+  $('#eyeShapeText').html(eyeShapeText)
+})
+
+$('#tailspinShape').change(()=>{
+  console.log( $('#tailspinShape').val() )
+  var shape = parseInt($('#tailspinShape').val()) //between 1 and 9
+  tailspinVariation(shape)
+  var tailspinShapeText = ($('#tailspinShape').val())
+  $('#tailspinShapeText').html(tailspinShapeText)
+})
+
+$('#teethShape').change(()=>{
+  console.log( $('#teethShape').val() )
+  var shape = parseInt($('#teethShape').val()) //between 1 and 9
+  teethVariation(shape)
+  var teethShapeText = ($('#teethShape').val())
+  $('#teethShapeText').html(teethShapeText)
 })
