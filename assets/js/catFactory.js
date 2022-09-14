@@ -384,7 +384,7 @@ function CoinType1() {
     $('.coin1').css('background-image', 'url(../assets/images/BTC-100px.png)')
 }
 function CoinType2() {
-    $('.coin1').css('background-image', 'url(../assets/images/ETH-100px.png)')
+    $('.coin1').css('background-image', 'url(../assets/images/ETH2-100px.png)')
 }
 function CoinType3() {
     $('.coin1').css('background-image', 'url(../assets/images/POLYGON-100px.png)')
