@@ -381,31 +381,31 @@ function coinVariation(num) {
 }
 
 function CoinType1() {
-    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/BTC-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/BTC-100px.png)')
 }
 function CoinType2() {
-    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/ETH1-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/ETH1-100px.png)')
 }
 function CoinType3() {
-    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/POLYGON-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/POLYGON-100px.png)')
 }
 function CoinType4() {
-    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/SOL-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/SOL-100px.png)')
 }
 function CoinType5() {
-    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/AVAX-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/AVAX-100px.png)')
 }
 function CoinType6() {
-    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/ALGO-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/ALGO-100px.png)')
 }
 function CoinType7() {
-    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/BNB-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/BNB-100px.png)')
 }
 function CoinType8() {
-    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/HBAR-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/HBAR-100px.png)')
 }
 function CoinType9() {
-    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/DOT-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/DOT-100px.png)')
 }
 
 
