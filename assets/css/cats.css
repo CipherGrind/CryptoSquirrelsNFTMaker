@@ -714,7 +714,7 @@ body {
 }
 
 .coin1 {
-    background-image: url('./assets/images/ETH-100px.png');
+    background-image: url('../assets/images/ETH-100px.png');
     background-position: center;
     width: 100px;
     height: 100px;
