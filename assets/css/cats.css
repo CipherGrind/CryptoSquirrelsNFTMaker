@@ -714,7 +714,7 @@ body {
 }
 
 .coin1 {
-    background-image: url('https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/BTC-100px.png');
+    background-image: url('./assets/images/ETH-100px.png');
     background-position: center;
     width: 100px;
     height: 100px;
