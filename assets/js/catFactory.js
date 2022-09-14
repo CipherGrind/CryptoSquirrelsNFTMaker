@@ -1,5 +1,7 @@
+//###################################################
+//RANDOM COLOR FUNCTION
+//###################################################
 
-//Random color
 function getColor() {
     var randomColor = Math.floor(Math.random() * 16777215).toString(16);
     return randomColor
@@ -18,12 +20,12 @@ function genColors(){
 //BODYLIMBSFACE FUNCTION
 //###################################################
 function bodyLimbsColor(color,code) {
-    $('#body, .face, .leftEar, .rightEar, .leftArm, .rightArm, .leftThigh, .rightThigh, .leftFoot, .rightFoot, #tail, .innertail2')
+    $('.body, .face, .leftEar, .rightEar, .leftArm, .rightArm, .leftThigh, .rightThigh, .leftFoot, .rightFoot, .tail, .innertail2')
         .css('background-color', '#' + color)  //This changes the color of the cat
     $('#bodycode').html('code: '+code) //This updates text of the badge next to the slider
     $('#dnabody').html(code) //This updates the body color part of the DNA that is displayed below the cat
-    console.log($('#body').css('background-color'))
-    var bodyAndLimbsColorRBG = ($('#body').css('background-color'))
+    console.log($('.body').css('background-color'))
+    var bodyAndLimbsColorRBG = ($('.body').css('background-color'))
     $('#bodyAndLimbsColorRBG').html(bodyAndLimbsColorRBG)
 }
 
@@ -36,8 +38,8 @@ function tailBellyColor(color,code) {
         .css('background-color', '#' + color)  //This changes the color of the cat
     $('#tailcode').html('code: '+code) //This updates text of the badge next to the slider
     $('#dnatail').html(code) //This updates the body color part of the DNA that is displayed below the cat
-    console.log($('#tail').css('background-color'))
-    var tailBellyColorRBG = ($('#tail').css('background-color'))
+    console.log($('.tail').css('background-color'))
+    var tailBellyColorRBG = ($('.tail').css('background-color'))
     $('#tailBellyColorRBG').html(tailBellyColorRBG) 
 }
 
@@ -212,53 +214,45 @@ function tailspinVariation(num) {
             $('#TailspinName').html('Stiff')
             TailspinType8() //set border type
             break
-        case 9:
-            normalTailspin() //reset 
-            $('#TailspinName').html('Tiny')
-            TailspinType9() //set border type
-            break
     }
 }
 
 function normalTailspin() {
-    $('#tail').css('transform', 'scale(-1, 1) rotate(-65deg)')
+    $('.tail').css('transform', 'scale(-1, 1) rotate(-65deg)')
     $('.innerTail, .innerTail2, .innerTail3').css('transform', 'none')
-    $('#tail').css('top', '260px')
+    $('.tail').css('top', '225px')
 }
 function TailspinType2() {
-    $('#tail, .innerTail, .innerTail2, .innerTail3').css('transform', 'skew(-15deg) scaleX(1.05) scaleY(1.1)')
+    $('.tail, .innerTail, .innerTail2, .innerTail3').css('transform', 'skew(-15deg) scaleX(1.05) scaleY(1.1)')
 }
 function TailspinType3() {
-    $('#tail, .innerTail, .innerTail2, .innerTail3').css('transform', 'skew(-5deg) rotate(10deg) scaleX(1.25) scaleY(1.25)')
-    $('#tail').css('top', '250px')
+    $('.tail, .innerTail, .innerTail2, .innerTail3').css('transform', 'skew(-5deg) rotate(10deg) scaleX(1.25) scaleY(1.25)')
+    $('.tail').css('top', '210px')
 }
 function TailspinType4() {
-    $('#tail, .innerTail, .innerTail2, .innerTail3').css('transform', 'skew(10deg) rotate(24deg) scaleX(1.1) scaleY(1.1)')
-    $('#tail').css('top', '280px')
+    $('.tail, .innerTail, .innerTail2, .innerTail3').css('transform', 'skew(10deg) rotate(24deg) scaleX(1.1) scaleY(1.1)')
+    $('.tail').css('top', '250px')
 }
 function TailspinType5() {
-    $('#tail, .innerTail, .innerTail2, .innerTail3').css('transform', 'skew(-8deg) rotate(13deg) scaleX(.9) scaleY(1.4)')
-    $('#tail').css('top', '240px')
+    $('.tail, .innerTail, .innerTail2, .innerTail3').css('transform', 'skew(-8deg) rotate(13deg) scaleX(.9) scaleY(1.4)')
+    $('.tail').css('top', '200px')
 }
 function TailspinType6() {
-    $('#tail').css('transform', 'skew(10deg) rotate(15deg) scaleX(1.75) scaleY(1.2)')
+    $('.tail').css('transform', 'skew(10deg) rotate(15deg) scaleX(1.75) scaleY(1.2)')
     $('.innerTail').css('transform', 'skew(-10deg) rotate(-10deg) scaleX(1) scaleY(1)')
 
 }
 function TailspinType7() {
-    $('#tail').css('transform', 'skew(-10deg) rotate(10deg) scaleX(1.1) scaleY(1.1)')
+    $('.tail').css('transform', 'skew(-10deg) rotate(10deg) scaleX(1.1) scaleY(1.1)')
     $('.innerTail').css('transform', 'skew(-10deg) rotate(15deg) scaleX(1.1) scaleY(1.1)')
     $('.innerTail2').css('transform', 'skew(-10deg) rotate(20deg) scaleX(1.1) scaleY(1.1)')
     $('.innerTail3').css('transform', 'skew(-10deg) rotate(5deg) scaleX(1.0) scaleY(1.0)')
 }
 function TailspinType8() {
-    $('#tail').css('transform', 'skew(-60deg) rotate(40deg) scaleX(.75) scaleY(.75)')
-    $('#tail').css('top', '300px')
+    $('.tail').css('transform', 'skew(-60deg) rotate(40deg) scaleX(.75) scaleY(.75)')
+    $('.tail').css('top', '270px')
 }
-function TailspinType9() {
-    $('#tail').css('transform', 'skew(30deg) rotate(70deg) scaleX(.8) scaleY(.8)')
-    $('#tail').css('top', '325px')
-}
+
 
 
 //###################################################
@@ -332,3 +326,184 @@ function TeethType5() {
 
 
 
+//###################################################
+//COIN FUNCTION
+//###################################################
+function coinVariation(num) {
+    
+    $('#dnacoin').html(num)
+    switch (num) {
+        case 1:
+            CoinType1()
+            $('#CoinName').html('BTC: Bitcoin') //set the badge to "n0rmal"
+            break
+        case 2:
+            CoinType1() //reset 
+            $('#CoinName').html('ETH: Ethereum')
+            CoinType2() //set border type
+            break
+        case 3:
+            CoinType1() //reset 
+            $('#CoinName').html('MATIC: Polygon')
+            CoinType3() //set border type
+            break
+        case 4:
+            CoinType1() //reset 
+            $('#CoinName').html('SOL: Solana')
+            CoinType4() //set border type
+            break
+        case 5:
+            CoinType1() //reset 
+            $('#CoinName').html('AVAX: Avalanche')
+            CoinType5() //set border type
+            break
+        case 6:
+            CoinType1() //reset 
+            $('#CoinName').html('ALGO: Algorand')
+            CoinType6() //set border type
+            break
+        case 7:
+            CoinType1() //reset 
+            $('#CoinName').html('BNB: Binance')
+            CoinType7() //set border type
+            break
+        case 8:
+            CoinType1() //reset 
+            $('#CoinName').html('HBAR: Hashgraph')
+            CoinType8() //set border type
+            break
+        case 9:
+            CoinType1() //reset 
+            $('#CoinName').html('DOT: Polkadot')
+            CoinType9() //set border type
+            break
+    }
+}
+
+function CoinType1() {
+    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/BTC-100px.png)')
+}
+function CoinType2() {
+    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/ETH1-100px.png)')
+}
+function CoinType3() {
+    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/POLYGON-100px.png)')
+}
+function CoinType4() {
+    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/SOL-100px.png)')
+}
+function CoinType5() {
+    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/AVAX-100px.png)')
+}
+function CoinType6() {
+    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/ALGO-100px.png)')
+}
+function CoinType7() {
+    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/BNB-100px.png)')
+}
+function CoinType8() {
+    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/HBAR-100px.png)')
+}
+function CoinType9() {
+    $('.coin1').css('background-image', 'url(/NFTMARKETPLACE/cryptosquirrel/assets/images/DOT-100px.png)')
+}
+
+
+//###################################################
+//ANIMATION FUNCTION:
+//###################################################
+
+function animationVariation(num){
+    $('#dnaanimation').html(num)
+    switch (num) {
+        case 1:
+            animationType1()
+            $('#AnimationName').html('None') //set the badge to "n0rmal"
+            break
+        case 2:
+            animationType2() //reset 
+            $('#AnimationName').html('Flying Squirrel')
+            break
+        case 3:
+            animationType3() //reset 
+            $('#AnimationName').html('Gliding Squirrel')
+            break
+        case 4:
+            animationType4() //reset 
+            $('#AnimationName').html('Move Squirrel')
+            break
+        case 5:
+            animationType5() //reset 
+            $('#AnimationName').html('Move Background')
+            break
+        case 6:
+            animationType6() //reset 
+            $('#AnimationName').html('Move Eyes')
+            break
+        case 7:
+            animationType7() //reset 
+            $('#AnimationName').html('Hypnotize')
+            break
+    }
+}
+
+function animationType1(){
+    //Reset here
+    resetAnimation();
+    $('.squirrel').addClass("noAni")
+}
+
+function animationType2(){
+    //Reset here
+    resetAnimation();
+    $('.squirrel').addClass("moveSquirrel")
+    $('.tailAni').addClass("moveTail")
+    $('.squirrelBox').addClass("moveBackground")
+    $('.eye1, .eye2').addClass("moveEyes")
+}
+function animationType3(){
+    //Reset here
+    resetAnimation();
+    $('.squirrel').addClass("moveSquirrel")
+}
+function animationType4(){
+    //Reset here
+    resetAnimation();
+    $('.tailAni').addClass("moveTail")
+    $('.squirrel').addClass("moveSquirrel")
+    $('.pupils').addClass("movePupils")
+}
+function animationType5(){
+    //Reset here
+    resetAnimation();
+    $('.squirrelBox').addClass("moveBackground")
+}
+function animationType6(){
+    //Reset here
+    resetAnimation();
+    $('.eye1').addClass("moveEyes")
+    $('.pupils').addClass("movePupils")
+}
+function animationType7(){
+    //Reset here
+    resetAnimation();
+    $('.squirrelBox, .bg2').addClass("moveBackground2")
+    $('.bg2').addClass("rotateBG")
+    $('.squirrel').addClass("moveSquirrel")
+    $('.tailAni').addClass("moveTail")
+    $('.pupils').addClass("movePupils")
+    $('.innerBelly').addClass("movePupils")
+}
+
+function resetAnimation(){
+    $('.squirrel').removeClass("noAni")
+    $('.squirrel').removeClass("moveSquirrel")
+    $('.tailAni').removeClass("moveTail")
+    $('.squirrelBox').removeClass("moveBackground")
+    $('.eye1, .eye2').removeClass("moveEyes")
+    $('.squirrelBox, .bg2').removeClass("moveBackground2")
+    $('.bg2').removeClass("rotateBG")
+    $('.pupils').removeClass("movePupils")
+    $('.innerBelly').removeClass("movePupils")
+    //add any animation class that you create
+}

@@ -72,7 +72,15 @@ body {
     padding-right: 10%;
     padding-left: 10%;
     text-align: center;
-    box-shadow: 20px 20px 40px #000000;
+}
+
+.bg2 {
+    border-radius: 50%;
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    top: 100px;
+    box-shadow: 10px 10px 0px #000000;
 }
 
 
@@ -95,10 +103,10 @@ body {
     margin-left: 5%;
     margin-right: 10%;
     border-radius: 50%;
-
+    position: relative;
 }
 
-#face {
+.face {
     
     background-blend-mode:darken;
     background-color: rgba(46, 46, 46, .75);
@@ -305,7 +313,7 @@ body {
     z-index: -2;
 }
 
-#body {
+.body {
     background-blend-mode:darken;
     background-color: rgba(46, 46, 46, .75);
     background-image: radial-gradient(rgba(96, 56, 31, .75) 0%, rgba(32, 32, 32, .75) 70%);
@@ -363,7 +371,13 @@ body {
     position: absolute;
 }
 
-#tail {
+.tailAni{
+    position: absolute;
+    top: 0px;
+    margin-left: 0px;
+}
+
+.tail {
     background-blend-mode:darken;
     background-color: rgba(46, 46, 46, .75);
     background-image: radial-gradient(rgba(96, 56, 31, .75) 0%, rgba(32, 32, 32, .75) 70%);
@@ -376,8 +390,7 @@ body {
     border-width: 5px;
     transform: scale(-1, 1) rotate(-65deg);
     position: absolute;
-    top: 260px;
-    z-index: 0;
+    top: 220px;
 
 }
 
@@ -448,7 +461,7 @@ body {
     border-style: double;
     border-width: 5px;
     position: absolute;
-    top: 440px;
+    top: 410px;
     transform: rotate(55deg);
 }
 
@@ -465,7 +478,7 @@ body {
     border-style: double;
     border-width: 5px;
     position: absolute;
-    top: 445px;
+    top: 415px;
     transform: rotate(50deg);
 }
 
@@ -534,7 +547,6 @@ body {
 }
 
 .rightThigh {
-
     background-blend-mode:darken;
     background-color: rgba(46, 46, 46, .7);
     background-image: radial-gradient(rgba(96, 56, 31, .7) 0%, rgba(32, 32, 32, .7) 60%);
@@ -543,8 +555,24 @@ body {
     margin-left: 175px;
     border-radius: 80px 20px 80px 20px;
     position: absolute;
-    top: 405px;
+    top: 375px;
     transform: rotate(-20deg);
+}
+
+.rightThigh2 {
+    background-blend-mode:darken;
+    background-color: rgba(46, 46, 46, .7);
+    background-image: radial-gradient(rgba(96, 56, 31, .7) 0%, rgba(32, 32, 32, .7) 60%);
+    width: 85px;
+    height: 95px;
+    margin-left: 180px;
+    border-radius: 80px 20px 80px 20px;
+    position: absolute;
+    top: 375px;
+    transform: rotate(-20deg);
+    border-color: rgb(0, 0, 0);
+    border-style: double;
+    border-width: 5px;
 }
 
 .leftThigh {
@@ -557,7 +585,7 @@ body {
     margin-left: 65px;
     border-radius: 80px 20px 80px 20px;
     position: absolute;
-    top: 395px;
+    top: 365px;
     transform: rotate(-25deg);
     z-index: 0;
 }
@@ -572,7 +600,7 @@ body {
     margin-left: 60px;
     border-radius: 80px 20px 80px 20px;
     position: absolute;
-    top: 395px;
+    top: 365px;
     transform: rotate(-25deg);
     z-index: 0;
     border-color: rgb(0, 0, 0);
@@ -590,7 +618,7 @@ body {
     margin-left: 180px;
     border-radius: 80px 20px 80px 20px;
     position: absolute;
-    top: 300px;
+    top: 270px;
     transform: rotate(-85deg);
 }
 
@@ -604,7 +632,7 @@ body {
     margin-left: 50px;
     border-radius: 80px 20px 80px 20px;
     position: absolute;
-    top: 330px;
+    top: 300px;
     transform: rotate(-85deg);
     border-color: rgb(0, 0, 0);
     border-style: double;
@@ -672,13 +700,27 @@ body {
     top: 62px;
 }
 
-#coin {
+.coin {
     background-color: #383B3E;
     width: 100px;
     height: 100px;
     border-radius: 50px;
     position: absolute;
-    top: 310px;
+    top: 280px;
+    margin-left: 50px;
+    border-color: rgb(203, 211, 218);
+    border-width: 5px;
+    border-style: solid;
+}
+
+.coin1 {
+    background-image: url('/NFTMARKETPLACE/cryptosquirrel/assets/images/BTC-100px.png');
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    top: 280px;
     margin-left: 50px;
     border-color: rgb(203, 211, 218);
     border-width: 5px;
@@ -750,7 +792,7 @@ body {
     background-size: 22px 22px;
     background-position:  10px 0, 10px 0, 0 0, 0 0;
     background-repeat: repeat;
-    top: 505px;
+    top: 475px;
     position: absolute;
     transform:skew(-55deg);
     margin-left: -20px;
@@ -772,7 +814,7 @@ body {
     background-size: 22px 22px;
     background-position:  10px 0, 10px 0, 0 0, 0 0;
     background-repeat: repeat;
-    top: 502px;
+    top: 472px;
     position: absolute;
     transform:skew(-55deg);
     margin-left: -26px;
@@ -784,7 +826,7 @@ body {
 .surfBoardFin {
     width: 0px;
     height: 0px;
-    top: 523px;
+    top: 493px;
     position: absolute;
     margin-left: 275px;
     border-left: 25px solid transparent;
@@ -802,7 +844,7 @@ body {
 .surfBoardFinB {
     width: 0px;
     height: 0px;
-    top: 520px;
+    top: 490px;
     position: absolute;
     margin-left: 269px;
     border-left: 30px solid transparent;
@@ -820,7 +862,7 @@ body {
 .surfBoardFin2 {
     width: 0px;
     height: 0px;
-    top: 530px;
+    top: 500px;
     position: absolute;
     margin-left: 210px;
     border-left: 25px solid transparent;
@@ -838,7 +880,7 @@ body {
 .surfBoardFin2B {
     width: 0px;
     height: 0px;
-    top: 529px;
+    top: 499px;
     position: absolute;
     margin-left: 205px;
     border-left: 30px solid transparent;
@@ -852,3 +894,4 @@ body {
     background-color: aquamarine;
     background-blend-mode:difference;
 }
+

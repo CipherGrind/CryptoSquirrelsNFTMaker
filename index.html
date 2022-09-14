@@ -15,10 +15,17 @@
   <link rel="stylesheet" href="assets/css/colors.css">
   <link rel="stylesheet" href="assets/css/factory.css">
   <link rel="stylesheet" href="assets/css/frontend.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/bganimations.css">
+  <link rel="stylesheet" href="assets/css/bganimations2.css">
+  
+  
+  
+
 </head>
 
 <body>
-    <div class="container p-1" style="margin-top: 1vh;margin-bottom: 5vh;">
+    <div class="container p-1" style="margin-bottom: 5vh;">
         <div align="center">
             <h3 class="c-white">Trippy Squirrel NFT Factory</h3>
             <p class="c-white">Create your custom Trippy Squirrel</p>
@@ -26,6 +33,7 @@
         
         <div class="row">
             <div class="col-lg-6 catBox m-auto squirrelBox">
+                <div class="bg2"></div>
                 <div class="bg1">
                     <div class="squirrel">
                         <div class="ears">
@@ -36,7 +44,7 @@
                                 <div class="innerRightEar"></div>
                             </div>
                         </div>
-                        <div id="face" class="face">
+                        <div class="face">
                             <div class="eyes">
                                 <div class="eye1">
                                     <div class="pupils"></div>
@@ -53,50 +61,54 @@
                                 <div class="rightTooth"></div>
                             </div>
                         </div>
-                        <div id="tail">
-                            <div class="innerTail">
-                                <div class="innerTail2">
-                                    <div class="innerTail3"></div>
+                            <div class="tailAni">
+                                <div class="tail">
+                                    <div class="innerTail">
+                                        <div class="innerTail2">
+                                            <div class="innerTail3"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="surfBoardFinB"></div>
-                        <div class="surfBoardFin"></div>
-                        <div class="surfBoardFin2B"></div>
-                        <div class="surfBoardFin2"></div>
-                        <div class="surfBoard2"></div>
-                        <div class="surfBoard"></div>
-                        <div class="leftThigh2"></div>
-                        <div class="leftFoot">
-                            <div class="toe3"></div>
-                            <div class="toe4"></div>
-                        </div>
-                        <div class="rightFoot">
-                            <div class="toe1"></div>
-                            <div class="toe2"></div>
-                        </div>
-                        <div class="leftThigh"></div>
-                        <div id="body">
-                            <div class="belly"></div> 
-                            <div class="innerBelly"></div>   
-                        </div>
-                        <div id="feet2">
-                            <div class="rightThigh"></div>
-                        </div>
-                        <div id="arms">
-                            <div class="leftArm"></div>
-                            <div id="coin">
-                                <div class="ethTop"></div>
-                                <div class="ethBottom"></div>
+                            <div class="surfBoardFinB"></div>
+                            <div class="surfBoardFin"></div>
+                            <div class="surfBoardFin2B"></div>
+                            <div class="surfBoardFin2"></div>
+                            <div class="surfBoard2"></div>
+                            <div class="surfBoard"></div>
+                            <div class="leftThigh2"></div>
+                            <div class="rightThigh2"></div>
+                            <div class="leftFoot">
+                                <div class="toe3"></div>
+                                <div class="toe4"></div>
                             </div>
-                            <div class="rightArm">
-                                <div class="finger2"></div>
-                                <div class="finger1"></div>
+                            <div class="rightFoot">
+                                <div class="toe1"></div>
+                                <div class="toe2"></div>
                             </div>
-                        </div>  
+                            <div class="leftThigh"></div>
+                            <div class="body">
+                                <div class="belly"></div> 
+                                <div class="innerBelly"></div>   
+                            </div>
+                            <div class="feet2">
+                                <div class="rightThigh"></div>
+                            </div>
+                            <div class="arms">
+                                <div class="leftArm"></div>
+                                <div class="coin1">
+                                </div>
+                                <div class="rightArm">
+                                    <div class="finger2"></div>
+                                    <div class="finger1"></div>
+                                </div>
+                            </div> 
                     </div>
-                    
-                    <br>
+                </div>
+
+                <br>
+                <br>
+
                     <div class="dnaDiv" id="catDNA">
                         <b>
                         DNA:
@@ -111,80 +123,98 @@
                             <span id="dnaeyes"></span>
                             <span id="dnatailspin"></span>
                             <span id="dnateeth"></span>
+                            <span id="dnacoin"></span>
 
                             <span id="dnaanimation"></span>
                             <span id="dnaspecial"></span>
                         </b>
                     </div>
-                </div>
             </div>
 
-        <div class="col-lg-5 cattributes m-2">
-        <!-- Cat colors -->
-        <div id="catColors">
-            <div class="form-group">
-                <label for="formControlRange">
-                    <b class="whiteText">Body and Limbs</b>
-                    <span class="badge badge-danger ml-2" id="bodycode"></span>
-                    <span id="bodyAndLimbsColorRBG"></span>
-                </label>
-                <input type="range" min="10" max="98" 
-                    class="form-control-range" id="bodyLimbsColor">
-            <br>
-                <label for="formControlRange">
-                    <b class="whiteText">Tail | Belly | Eyes</b>
-                    <span class="badge badge-danger ml-2" id="tailcode"></span>
-                    <span id="tailBellyColorRBG"></span>
-                </label>
-                <input type="range" min="10" max="98" 
-                    class="form-control-range" id="tailBellyColor">  
-            <br>
-                <label for="formControlRange">
-                    <b class="whiteText">Surf Board</b>
-                    <span class="badge badge-danger ml-2" id="surfcode"></span>
-                    <span id="surfBoardColorRBG"></span>
-                </label>
-                <input type="range" min="10" max="98" 
-                    class="form-control-range" id="surfBoardColor" />
-            <br>
-                <label for="formControlRange">
-                    <b class="whiteText">Background</b>
-                    <span class="badge badge-danger ml-2" id="bgcode"></span>
-                    <span id="bgColorRBG"></span>
-                </label>
-                <input type="range" min="10" max="98" 
-                    class="form-control-range" id="bgColor">  
-            </div>
-            <div class="form-group">
-                <label for="formControlRange">
-                    <b class="whiteText">Eyes Shape</b>
-                    <span class="badge badge-danger ml-2" id="eyeName"></span>
-                    <span id="eyeShapeText"></span>
-                </label>
-                <input type="range" min="1" max="9" 
-                    class="form-control-range" id="eyesShape">
-            </div>
-            <div class="form-group">
-                <label for="formControlRange">
-                    <b class="whiteText">Tail Shape</b>
-                    <span class="badge badge-danger ml-2" id="TailspinName"></span>
-                    <span id="tailspinShapeText"></span>
-                </label>
-                <input type="range" min="1" max="9" 
-                    class="form-control-range" id="tailspinShape">
-            </div>
-            <div class="form-group">
-                <label for="formControlRange">
-                    <b class="whiteText">Teeth Shape</b>
-                    <span class="badge badge-danger ml-2" id="TeethName"></span>
-                    <span id="teethShapeText"></span>
-                </label>
-                <input type="range" min="1" max="5" 
-                    class="form-control-range" id="teethShape">
+            <div class="col-lg-5 cattributes m-2">
+            <!-- Cat colors -->
+            <div id="catColors">
+                <div class="form-group">
+                    <label for="formControlRange">
+                        <b class="whiteText">Body and Limbs</b>
+                        <span class="badge badge-danger ml-2" id="bodycode"></span>
+                        <span id="bodyAndLimbsColorRBG"></span>
+                    </label>
+                    <input type="range" min="10" max="98" 
+                        class="form-control-range" id="bodyLimbsColor">
+                <br>
+                    <label for="formControlRange">
+                        <b class="whiteText">Tail | Belly | Eyes</b>
+                        <span class="badge badge-danger ml-2" id="tailcode"></span>
+                        <span id="tailBellyColorRBG"></span>
+                    </label>
+                    <input type="range" min="10" max="98" 
+                        class="form-control-range" id="tailBellyColor">  
+                <br>
+                    <label for="formControlRange">
+                        <b class="whiteText">Surf Board</b>
+                        <span class="badge badge-danger ml-2" id="surfcode"></span>
+                        <span id="surfBoardColorRBG"></span>
+                    </label>
+                    <input type="range" min="10" max="98" 
+                        class="form-control-range" id="surfBoardColor" />
+                <br>
+                    <label for="formControlRange">
+                        <b class="whiteText">Background</b>
+                        <span class="badge badge-danger ml-2" id="bgcode"></span>
+                        <span id="bgColorRBG"></span>
+                    </label>
+                    <input type="range" min="10" max="98" 
+                        class="form-control-range" id="bgColor">  
+                </div>
+                <div class="form-group">
+                    <label for="formControlRange">
+                        <b class="whiteText">Eyes Shape</b>
+                        <span class="badge badge-danger ml-2" id="eyeName"></span>
+                        <span id="eyeShapeText"></span>
+                    </label>
+                    <input type="range" min="1" max="9" 
+                        class="form-control-range" id="eyesShape">
+                </div>
+                <div class="form-group">
+                    <label for="formControlRange">
+                        <b class="whiteText">Tail Shape</b>
+                        <span class="badge badge-danger ml-2" id="TailspinName"></span>
+                        <span id="tailspinShapeText"></span>
+                    </label>
+                    <input type="range" min="1" max="8" 
+                        class="form-control-range" id="tailspinShape">
+                </div>
+                <div class="form-group">
+                    <label for="formControlRange">
+                        <b class="whiteText">Teeth Shape</b>
+                        <span class="badge badge-danger ml-2" id="TeethName"></span>
+                        <span id="teethShapeText"></span>
+                    </label>
+                    <input type="range" min="1" max="5" 
+                        class="form-control-range" id="teethShape">
+                </div>
+                <div class="form-group">
+                    <label for="formControlRange">
+                        <b class="whiteText">Cryptocurrency</b>
+                        <span class="badge badge-danger ml-2" id="CoinName"></span>
+                        <span id="coinShapeText"></span>
+                    </label>
+                    <input type="range" min="1" max="9" 
+                        class="form-control-range" id="coinShape">
+                </div>
+                <div class="form-group">
+                    <label for="formControlRange">
+                        <b class="whiteText">Animation</b>
+                        <span class="badge badge-danger ml-2" id="AnimationName"></span>
+                        <span id=""></span>
+                    </label>
+                    <input type="range" min="1" max="7" 
+                        class="form-control-range" id="animation">
+                </div>
             </div>
         </div>
     </div>
-</div>
 <br>
 
     <footer align="left">

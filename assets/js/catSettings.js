@@ -10,8 +10,10 @@ var defaultDNA = {
     "eyesShape" : 1,
     "tailspinShape" : 1,
     "teethShape" : 1,
+    "coinShape" : 3,
 
-    "animation" :  8,
+    "animation" :  4,
+
     "lastNum" :  1
     }
 
@@ -24,8 +26,10 @@ $( document ).ready(function() {
   $('#dnaeyes').html(defaultDNA.eyesShape);
   $('#dnatailspin').html(defaultDNA.tailspinShape);
   $('#dnateeth').html(defaultDNA.teethShape);
+  $('#dnacoin').html(defaultDNA.coinShape);
 
    $('#dnaanimation').html(defaultDNA.animation);
+
    $('#dnaspecial').html(defaultDNA.lastNum);
 
   renderCat(defaultDNA)
@@ -40,6 +44,7 @@ function getDna(){
     dna += $('#dnaeyes').html()
     dna += $('#dnatailspin').html()
     dna += $('#dnateeth').html()
+    dna += $('#dnacoin').html()
     dna += $('#dnaanimation').html()
     dna += $('#dnaspecial').html()
 
@@ -77,6 +82,14 @@ function renderCat(dna){
     $('#teethShapeText').html(teethShapeText)
     console.log(teethShapeText)
 
+    coinVariation(dna.coinShape)
+    $('#coinShape').val(dna.coinShape)
+    var coinShapeText = ($('#coinShape').val())
+    $('#coinShapeText').html(coinShapeText)
+    console.log(coinShapeText)
+
+    animationVariation(dna.animation)
+    $("#animation").val(dna.animation)
 }
 
 // Changing squirrel colors
@@ -130,4 +143,20 @@ $('#teethShape').change(()=>{
   teethVariation(shape)
   var teethShapeText = ($('#teethShape').val())
   $('#teethShapeText').html(teethShapeText)
+})
+
+$('#coinShape').change(()=>{
+  console.log( $('#coinShape').val() )
+  var shape = parseInt($('#coinShape').val()) //between 1 and 9
+  coinVariation(shape)
+  var coinShapeText = ($('#coinShape').val())
+  $('#coinShapeText').html(coinShapeText)
+})
+
+
+//animations
+$('#animation').change(()=>{
+  var animationVal = parseInt( $('#animation').val() ) //animationVal 2 instead of "2"
+  animationVariation(animationVal)
+  console.log(animationVal);
 })
