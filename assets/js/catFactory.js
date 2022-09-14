@@ -405,7 +405,7 @@ function CoinType8() {
     $('.coin1').css('background-image', 'url(../assets/images/HBAR-100px.png)')
 }
 function CoinType9() {
-    $('.coin1').css('background-image', 'url(../assets/images/DOT-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/6dd8442338ea7b1a47c5ab6c3d80c01816dfecc8/assets/images/DOT-100px.png)')
 }
 
 
