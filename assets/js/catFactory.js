@@ -381,31 +381,31 @@ function coinVariation(num) {
 }
 
 function CoinType1() {
-    $('.coin1').css('background-image', 'url(./assets/images/BTC-100px.png)')
+    $('.coin1').css('background-image', 'url(../assets/images/BTC-100px.png)')
 }
 function CoinType2() {
-    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/542911f43af570bb7f2d52a3f048e08aac7fdca0/assets/images/ETH-100px.png)')
+    $('.coin1').css('background-image', 'url(../assets/images/ETH-100px.png)')
 }
 function CoinType3() {
-    $('.coin1').css('background-image', 'url(./assets/images/POLYGON-100px.png)')
+    $('.coin1').css('background-image', 'url(../assets/images/POLYGON-100px.png)')
 }
 function CoinType4() {
-    $('.coin1').css('background-image', 'url(./assets/images/SOL-100px.png)')
+    $('.coin1').css('background-image', 'url(../assets/images/SOL-100px.png)')
 }
 function CoinType5() {
-    $('.coin1').css('background-image', 'url(./assets/images/AVAX-100px.png)')
+    $('.coin1').css('background-image', 'url(../assets/images/AVAX-100px.png)')
 }
 function CoinType6() {
-    $('.coin1').css('background-image', 'url(./assets/images/ALGO-100px.png)')
+    $('.coin1').css('background-image', 'url(../assets/images/ALGO-100px.png)')
 }
 function CoinType7() {
-    $('.coin1').css('background-image', 'url(./assets/images/BNB-100px.png)')
+    $('.coin1').css('background-image', 'url(../assets/images/BNB-100px.png)')
 }
 function CoinType8() {
-    $('.coin1').css('background-image', 'url(./assets/images/HBAR-100px.png)')
+    $('.coin1').css('background-image', 'url(../assets/images/HBAR-100px.png)')
 }
 function CoinType9() {
-    $('.coin1').css('background-image', 'url(./assets/images/DOT-100px.png)')
+    $('.coin1').css('background-image', 'url(../assets/images/DOT-100px.png)')
 }
 
 
