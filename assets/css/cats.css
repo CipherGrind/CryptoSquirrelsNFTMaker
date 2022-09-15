@@ -59,6 +59,18 @@ body {
     margin-left: 10px;
 }
 
+#coinShapeText {
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#animationText {
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
 .dnaDiv {
     background-color: gainsboro;
     padding: 5px 10px 5px 10px;
@@ -712,7 +724,7 @@ body {
     border-width: 5px;
     border-style: solid;
 }
-
+ 
 .coin1 {
     background-image: url('https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/POLYGON-100px.png?raw=true');
     background-position: center;

@@ -380,7 +380,7 @@ function coinVariation(num) {
     }
 }
 
-function CoinType1() {
+function CoinType1() { 
     $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/BTC-100px.png?raw=true)')
 }
 function CoinType2() {

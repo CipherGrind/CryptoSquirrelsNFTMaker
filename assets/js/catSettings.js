@@ -1,5 +1,5 @@
 
-var colors = Object.values(allColors()) 
+var colors = Object.values(allColors())  
 
 var defaultDNA = {
     "bodyLimbsColor" : 13,
@@ -9,7 +9,7 @@ var defaultDNA = {
     //Cattributes
     "eyesShape" : 1,
     "tailspinShape" : 1,
-    "teethShape" : 1,
+    "teethShape" : 4,
     "coinShape" : 3,
 
     "animation" :  4,
@@ -90,6 +90,9 @@ function renderCat(dna){
 
     animationVariation(dna.animation)
     $("#animation").val(dna.animation)
+    var animationText = ($('#animation').val())
+    $('#animationText').html(animationText)
+    console.log(animationText)
 }
 
 // Changing squirrel colors
@@ -159,4 +162,6 @@ $('#animation').change(()=>{
   var animationVal = parseInt( $('#animation').val() ) //animationVal 2 instead of "2"
   animationVariation(animationVal)
   console.log(animationVal);
+  var animationText = ($('#animation').val())
+  $('#animationText').html(animationText)
 })
