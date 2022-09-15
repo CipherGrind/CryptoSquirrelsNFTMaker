@@ -10,7 +10,7 @@ var defaultDNA = {
     "eyesShape" : 1,
     "tailspinShape" : 1,
     "teethShape" : 4,
-    "coinShape" : 3,
+    "coinShape" : 2,
 
     "animation" :  4,
 
