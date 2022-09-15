@@ -381,31 +381,31 @@ function coinVariation(num) {
 }
 
 function CoinType1() {
-    $('.coin1').css('background-image', 'url(../assets/images/BTC-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/BTC-100px.png?raw=true)')
 }
 function CoinType2() {
-    $('.coin1').css('background-image', 'url(../assets/images/ETH2-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/ETH2-100px.png?raw=true)')
 }
 function CoinType3() {
-    $('.coin1').css('background-image', 'url(../assets/images/POLYGON-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/POLYGON-100px.png?raw=true)')
 }
 function CoinType4() {
-    $('.coin1').css('background-image', 'url(../assets/images/SOL-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/SOL-100px.png?raw=true)')
 }
 function CoinType5() {
-    $('.coin1').css('background-image', 'url(../assets/images/AVAX-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/AVAX-100px.png?raw=true)')
 }
 function CoinType6() {
-    $('.coin1').css('background-image', 'url(../assets/images/ALGO-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/ALGO-100px.png?raw=true)')
 }
 function CoinType7() {
-    $('.coin1').css('background-image', 'url(../assets/images/BNB-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/BNB-100px.png?raw=true)')
 }
 function CoinType8() {
-    $('.coin1').css('background-image', 'url(../assets/images/HBAR-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/HBAR-100px.png?raw=true)')
 }
 function CoinType9() {
-    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/6dd8442338ea7b1a47c5ab6c3d80c01816dfecc8/assets/images/DOT-100px.png)')
+    $('.coin1').css('background-image', 'url(https://github.com/CipherGrind/TrippySquirrelsNFTMaker/blob/gh-pages/assets/images/DOT-100px.png?raw=true)')
 }
 
 
