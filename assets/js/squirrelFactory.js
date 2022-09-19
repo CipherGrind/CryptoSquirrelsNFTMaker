@@ -435,7 +435,7 @@
     function animationSwitchType1(){
         //Reset here
         resetSwitchAnimation();
-        $('.squirrel').addClass("noAni")
+        
         document.getElementById("animationSwitch2").checked = false;
         document.getElementById("animationSwitch3").checked = false;
         document.getElementById("animationSwitch4").checked = false;
@@ -445,14 +445,14 @@
     }
 
     function animationSwitchType2(){
-        $('.squirrel').removeClass("noAni")
+        
         document.getElementById("animationSwitch2").checked = true;
         var previousAnimationPreset = parseInt( $('#animationBG').val() )
         animationVariation(previousAnimationPreset);
     }
 
     function resetSwitchAnimation(){
-        $('.squirrel').removeClass("noAni")
+        //remove switch animations
         $('.squirrel').removeClass("moveSquirrel")
         $('.tailAni').removeClass("moveTail")
         $('.squirrelBoxBG1').removeClass("moveBackground")
@@ -461,7 +461,23 @@
         $('.squirrelBoxBG2').removeClass("rotateBG")
         $('.pupils').removeClass("movePupils")
         $('.innerBelly').removeClass("moveBelly")
-        //add any animation class that you create
+        //remove background animations
+        animationVariation(1)
+        $('.squirrelBoxBG1').removeClass("moveBackground")
+        $('.squirrelBoxBG1, .squirrelBoxBG2').removeClass("moveBackground2")
+        $('.squirrelBoxBG2').removeClass("rotateBG")
+        $('.squirrelBoxBG1').removeClass("moveBackground4")
+        $('.squirrelBoxBG2').removeClass("moveBackground4b")
+        $('.squirrelBoxBG1').removeClass("moveBackground5")
+        $('.squirrelBoxBG2').removeClass("moveBackground5b")
+        $('.squirrelBoxBG1').removeClass("moveBackground6")
+        $('.squirrelBoxBG2').removeClass("moveBackground6")
+        $('.squirrelBoxBG2').removeClass("moveBackground6b")
+        $('.squirrelBoxBG1').removeClass("moveBackground7")
+        $('.squirrelBoxBG2').removeClass("moveBackground7")
+        $('.squirrelBoxBG2').removeClass("moveBackground7b")
+        $('.squirrelBoxBG1').removeClass("moveBackground8c")
+        $('.squirrelBoxBG1').removeClass("moveBackground9")
     }
 
     document.addEventListener('DOMContentLoaded', function () {
