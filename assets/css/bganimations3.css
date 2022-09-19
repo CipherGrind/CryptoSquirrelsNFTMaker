@@ -1,0 +1,68 @@
+
+.moveBackground{
+    animation: moveBackground 2.5s infinite;
+}
+@keyframes moveBackground {
+    0% {
+        background-blend-mode:color-burn;
+        background-color: rgba(28, 238, 154, 0.741);
+        background-image: repeating-radial-gradient(circle, purple, aqua, black, purple, lime, 
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple, 
+        black, lime, black);
+    }
+    20% {
+        background-blend-mode:color-burn;
+        background-color: rgba(255, 179, 0, 0.861);
+        background-image: repeating-radial-gradient(circle, purple, aqua, black, purple, lime, 
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple, 
+        black, purple,lime, black, aqua, purple,  
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, lime, black);
+    }
+    40% {
+        background-blend-mode:color-burn;
+        background-color: rgba(0, 255, 234, 0.798);
+        background-image: repeating-radial-gradient(circle, purple, aqua, black, purple, lime, 
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, lime, black);
+    }
+    60% {
+        background-blend-mode:color-burn;
+        background-color: rgba(0, 13, 255, 0.78);
+        background-image: repeating-radial-gradient(circle, purple, aqua, black, purple, lime, 
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple, 
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  
+        black, purple,lime, black, aqua, purple,  lime, black, lime, black);
+    }
+    80% {
+        background-blend-mode:color-burn;
+        background-color: rgba(240, 26, 137, 0.781);
+        background-image: repeating-radial-gradient(circle, purple, aqua, black, purple, lime, 
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, lime, black);
+    }
+    100% {
+        background-blend-mode:color-burn;
+        background-color: rgba(28, 238, 154, 0.741);
+        background-image: repeating-radial-gradient(circle, purple, aqua, black, purple, lime, 
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple,
+        black, purple,lime, black, aqua, purple,  lime, black, aqua, purple, 
+        black, lime, black);
+    }
+}
+

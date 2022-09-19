@@ -2,220 +2,343 @@
 <head> 
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trippy Squirrel Maker </title>
+  <title>Trippy Squirrels NFT Maker </title>
   <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <script src="assets/bootstrap/js/popper.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="assets/css/mystyle.css">
-
-  <link rel="stylesheet" href="assets/css/mystyle.css">
-  <link rel="stylesheet" href="assets/css/cats.css">
-  <link rel="stylesheet" href="assets/css/colors.css">
-  <link rel="stylesheet" href="assets/css/factory.css">
   <link rel="stylesheet" href="assets/css/frontend.css">
+  <link rel="stylesheet" href="assets/css/squirrels.css">
+  <link rel="stylesheet" href="assets/css/colors.css">
   <link rel="stylesheet" href="assets/css/animations.css">
-  <link rel="stylesheet" href="assets/css/bganimations.css">
   <link rel="stylesheet" href="assets/css/bganimations2.css">
+  <link rel="stylesheet" href="assets/css/bganimations3.css">
+  <link rel="stylesheet" href="assets/css/bganimations4.css">
+  <link rel="stylesheet" href="assets/css/bganimations5.css">
+  <link rel="stylesheet" href="assets/css/bganimations6.css">
+  <link rel="stylesheet" href="assets/css/bganimations7.css">
+  <link rel="stylesheet" href="assets/css/bganimations8.css">
+  <link rel="stylesheet" href="assets/css/bganimations9.css">
   
-  
-  
-
 </head>
 
+
 <body>
-    <div class="container p-1" style="margin-bottom: 5vh;">
-        <div align="center">
+    <!-- Main Div -->
+    <div class="p-1">
+<!-- ############################### -->
+        <!-- Title -->
+<!-- ############################### -->
+        <div class="m-1" align="center">
             <h3 class="c-white">Trippy Squirrel NFT Factory</h3>
             <p class="c-white">Create your custom Trippy Squirrel</p>
         </div>
-        
-        <div class="row">
-            <div class="col-lg-6 catBox m-auto squirrelBox">
-                <div class="bg2"></div>
-                <div class="bg1">
-                    <div class="squirrel">
-                        <div class="ears">
-                            <div class="leftEar" >
-                                <div class="innerLeftEar"></div> 
-                            </div>
-                            <div class="rightEar">
-                                <div class="innerRightEar"></div>
-                            </div>
-                        </div>
-                        <div class="face">
-                            <div class="eyes">
-                                <div class="eye1">
-                                    <div class="pupils"></div>
-                                    <div class="innerPupils"></div>
-                                </div>
-                                <div class="eye2">
-                                    <div class="pupils"></div>
-                                    <div class="innerPupils"></div>
-                                </div>
-                            </div>
-                            <div class="nose"></div>
-                            <div class="mouth">
-                                <div class="leftTooth"></div>
-                                <div class="rightTooth"></div>
-                            </div>
-                        </div>
-                            <div class="tailAni">
-                                <div class="tail">
-                                    <div class="innerTail">
-                                        <div class="innerTail2">
-                                            <div class="innerTail3"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="surfBoardFinB"></div>
-                            <div class="surfBoardFin"></div>
-                            <div class="surfBoardFin2B"></div>
-                            <div class="surfBoardFin2"></div>
-                            <div class="surfBoard2"></div>
-                            <div class="surfBoard"></div>
-                            <div class="leftThigh2"></div>
-                            <div class="rightThigh2"></div>
-                            <div class="leftFoot">
-                                <div class="toe3"></div>
-                                <div class="toe4"></div>
-                            </div>
-                            <div class="rightFoot">
-                                <div class="toe1"></div>
-                                <div class="toe2"></div>
-                            </div>
-                            <div class="leftThigh"></div>
-                            <div class="body">
-                                <div class="belly"></div> 
-                                <div class="innerBelly"></div>   
-                            </div>
-                            <div class="feet2">
-                                <div class="rightThigh"></div>
-                            </div>
-                            <div class="arms">
-                                <div class="leftArm"></div>
-                                <div class="coin1">
-                                </div>
-                                <div class="rightArm">
-                                    <div class="finger2"></div>
-                                    <div class="finger1"></div>
-                                </div>
-                            </div> 
-                    </div>
-                </div>
+<!-- ############################### -->
+        <!-- DNA Row -->
+<!-- ############################### -->
+        <div class="row m-2 p-2">
+            <div class="m-auto dnaDiv" id="squirrelDNA">
+                <b>
+                DNA:
+                    <!-- Colors -->
+                    <span id="dnabody"></span>
+                    <span id="dnatail"></span>
+                    <span id="dnasurf"></span>
+                    <span id="dnabg"></span>
+                    <!-- attributes -->
+                    <span id="dnaeyes"></span><span id="dnatailspin"></span><span id="dnateeth"></span>
+                    <!-- coins -->
+                    <span id="dnacoin"></span>
+                    <!-- animation switches -->
+                    <span id="dnaanimationswitch2"></span>
+                    <span id="dnaanimationswitch3"></span><span id="dnaanimationswitch4"></span><span id="dnaanimationswitch5"></span><span id="dnaanimationswitch6"></span><span id="dnaanimationswitch7"></span>
+                    <!-- background animations -->
+                    <span id="dnaanimationbg"></span>
 
-                <br>
-                <br>
-
-                    <div class="dnaDiv" id="catDNA">
-                        <b>
-                        DNA:
-                        <!-- Colors -->
-                            
-                            <span id="dnabody"></span>
-                            <span id="dnatail"></span>
-                            <span id="dnasurf"></span>
-                            <span id="dnabg"></span>
-                        
-                            <!-- Cattributes -->
-                            <span id="dnaeyes"></span>
-                            <span id="dnatailspin"></span>
-                            <span id="dnateeth"></span>
-                            <span id="dnacoin"></span>
-
-                            <span id="dnaanimation"></span>
-                            <span id="dnaspecial"></span>
-                        </b>
-                    </div>
-            </div>
-
-            <div class="col-lg-5 cattributes m-2">
-            <!-- Cat colors -->
-            <div id="catColors">
-                <div class="form-group">
-                    <label for="formControlRange">
-                        <b class="whiteText">Body and Limbs</b>
-                        <span class="badge badge-danger ml-2" id="bodycode"></span>
-                        <span id="bodyAndLimbsColorRBG"></span>
-                    </label>
-                    <input type="range" min="10" max="98" 
-                        class="form-control-range" id="bodyLimbsColor">
-                <br>
-                    <label for="formControlRange">
-                        <b class="whiteText">Tail | Belly | Eyes</b>
-                        <span class="badge badge-danger ml-2" id="tailcode"></span>
-                        <span id="tailBellyColorRBG"></span>
-                    </label>
-                    <input type="range" min="10" max="98" 
-                        class="form-control-range" id="tailBellyColor">  
-                <br>
-                    <label for="formControlRange">
-                        <b class="whiteText">Surf Board</b>
-                        <span class="badge badge-danger ml-2" id="surfcode"></span>
-                        <span id="surfBoardColorRBG"></span>
-                    </label>
-                    <input type="range" min="10" max="98" 
-                        class="form-control-range" id="surfBoardColor" />
-                <br>
-                    <label for="formControlRange">
-                        <b class="whiteText">Background</b>
-                        <span class="badge badge-danger ml-2" id="bgcode"></span>
-                        <span id="bgColorRBG"></span>
-                    </label>
-                    <input type="range" min="10" max="98" 
-                        class="form-control-range" id="bgColor">  
-                </div>
-                <div class="form-group">
-                    <label for="formControlRange">
-                        <b class="whiteText">Eyes Shape</b>
-                        <span class="badge badge-danger ml-2" id="eyeName"></span>
-                        <span id="eyeShapeText"></span>
-                    </label>
-                    <input type="range" min="1" max="9" 
-                        class="form-control-range" id="eyesShape">
-                </div>
-                <div class="form-group">
-                    <label for="formControlRange">
-                        <b class="whiteText">Tail Shape</b>
-                        <span class="badge badge-danger ml-2" id="TailspinName"></span>
-                        <span id="tailspinShapeText"></span>
-                    </label>
-                    <input type="range" min="1" max="8" 
-                        class="form-control-range" id="tailspinShape">
-                </div>
-                <div class="form-group">
-                    <label for="formControlRange">
-                        <b class="whiteText">Teeth Shape</b>
-                        <span class="badge badge-danger ml-2" id="TeethName"></span>
-                        <span id="teethShapeText"></span>
-                    </label>
-                    <input type="range" min="1" max="5" 
-                        class="form-control-range" id="teethShape">
-                </div>
-                <div class="form-group">
-                    <label for="formControlRange">
-                        <b class="whiteText">Cryptocurrency</b>
-                        <span class="badge badge-danger ml-2" id="CoinName"></span>
-                        <span id="coinShapeText"></span>
-                    </label>
-                    <input type="range" min="1" max="9" 
-                        class="form-control-range" id="coinShape">
-                </div>
-                <div class="form-group">
-                    <label for="formControlRange">
-                        <b class="whiteText">Animation</b>
-                        <span class="badge badge-danger ml-2" id="AnimationName"></span>
-                        <span id="animationText"></span>
-                    </label>
-                    <input type="range" min="1" max="7" 
-                        class="form-control-range" id="animation">
-                </div>
+                    <span id="dnaspecial"></span>
+                </b>
             </div>
         </div>
+        <!-- Boxes Row -->
+        <div class="row p-1">
+<!-- ############################### -->
+            <!-- Main Squirrel Box -->
+<!-- ############################### -->
+            <div class="col-lg-6 m-auto squirrelBox">
+                <div class="m-auto squirrelBoxBG1">
+                    <div class="m-auto d-flex align-self-center squirrelBoxBG2"></div>
+                    <div class="row">
+                        <div class="m-auto d-flex align-self-center innerSquirrelBox">
+                            <div class="squirrel">
+                                <div class="ears">
+                                    <div class="leftEar" >
+                                        <div class="innerLeftEar"></div> 
+                                    </div>
+                                    <div class="rightEar">
+                                        <div class="innerRightEar"></div>
+                                    </div>
+                                </div>
+                                <div class="face">
+                                    <div class="eyes">
+                                        <div class="eye1">
+                                            <div class="pupils"></div>
+                                            <div class="innerPupils"></div>
+                                        </div>
+                                        <div class="eye2">
+                                            <div class="pupils"></div>
+                                            <div class="innerPupils"></div>
+                                        </div>
+                                    </div>
+                                    <div class="nose"></div>
+                                    <div class="mouth">
+                                        <div class="leftTooth"></div>
+                                        <div class="rightTooth"></div>
+                                    </div>
+                                </div>
+                                    <div class="tailAni">
+                                        <div class="tail">
+                                            <div class="innerTail">
+                                                <div class="innerTail2">
+                                                    <div class="innerTail3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="surfBoardFinB"></div>
+                                    <div class="surfBoardFin"></div>
+                                    <div class="surfBoardFin2B"></div>
+                                    <div class="surfBoardFin2"></div>
+                                    <div class="surfBoard2"></div>
+                                    <div class="surfBoard"></div>
+                                    <div class="leftThigh2"></div>
+                                    <div class="leftThigh3"></div>
+                                    <div class="rightThigh2"></div>
+                                    <div class="rightThigh3"></div>
+                                    <div class="leftFoot">
+                                        <div class="toe3"></div>
+                                        <div class="toe4"></div>
+                                    </div>
+                                    <div class="rightFoot">
+                                        <div class="toe1"></div>
+                                        <div class="toe2"></div>
+                                    </div>
+                                    <div class="leftThigh"></div>
+                                    <div class="body">
+                                        <div class="belly"></div> 
+                                        <div class="innerBelly"></div>   
+                                    </div>
+                                    <div class="feet2">
+                                        <div class="rightThigh"></div>
+                                    </div>
+                                    <div class="arms">
+                                        <div class="leftArm"></div>
+                                        <div class="coin1">
+                                        </div>
+                                        <div class="rightArm">
+                                            <div class="finger2"></div>
+                                            <div class="finger1"></div>
+                                        </div>
+                                    </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- ############################### -->
+            <!-- Main Attributes Box -->
+<!-- ############################### -->
+            <div class="col-lg-6 m-auto attributesBox">
+                <div class="p-3 m-1 attributes">
+                    <button id="ColorsTab" type="button" class="btn btnTabs">Colors</button>
+                    <button id="AttributesTab" type="button" class="btn btnTabs">Attributes</button>
+                    <button id="AnimationsTab" type="button" class="btn btnTabs">Animations</button>
+                    
+                    <br><br><br>
+                    <!-- Colors: Body | Limbs -->
+                    <div class="form-group" id="bodyLimbsColorGroup">
+                        <label for="formControlRange">
+                            <b>Body | Limbs</b>
+                            <span class="badge badge-danger ml-2" id="bodycode"></span>
+                            <span id="bodyAndLimbsColorRBG"></span>
+                        </label>
+                        <input type="range" min="10" max="98" 
+                            class="form-control-range" id="bodyLimbsColor">
+                    </div>
+                    <!-- Colors: Tail | Belly | Eyes -->
+                    <div class="form-group" id="tailBellyEyesColorGroup">
+                        <label for="formControlRange">
+                            <b>Tail | Belly | Eyes</b>
+                            <span class="badge badge-danger ml-2" id="tailcode"></span>
+                            <span id="tailBellyColorRBG"></span>
+                        </label>
+                        <input type="range" min="10" max="98" 
+                            class="form-control-range" id="tailBellyColor">  
+                    </div>
+                    <!-- Colors: Surf Board -->
+                    <div class="form-group" id="surfBoardColorGroup">
+                        <label for="formControlRange">
+                            <b>Surf Board</b>
+                            <span class="badge badge-danger ml-2" id="surfcode"></span>
+                            <span id="surfBoardColorRBG"></span>
+                        </label>
+                        <input type="range" min="10" max="98" 
+                            class="form-control-range" id="surfBoardColor" />
+                    </div>
+                    <!-- Colors: Background -->
+                    <div class="form-group" id="bgColorGroup">
+                        <label for="formControlRange">
+                            <b>Background</b>
+                            <span class="badge badge-danger ml-2" id="bgcode"></span>
+                            <span id="bgColorRBG"></span>
+                        </label>
+                        <input type="range" min="10" max="98" 
+                            class="form-control-range" id="bgColor">  
+                    </div>
+                    <!-- Shape: Eyes -->
+                    <div class="form-group" id="eyesShapeGroup">
+                        <label for="formControlRange">
+                            <b>Eyes Shape</b>
+                            <span class="badge badge-danger ml-2" id="eyeName"></span>
+                            <span id="eyeShapeText"></span>
+                        </label>
+                        <input type="range" min="1" max="9" 
+                            class="form-control-range" id="eyesShape">
+                    </div>
+                    <!-- Shape: Tail -->
+                    <div class="form-group" id="tailspinShapeGroup">
+                        <label for="formControlRange">
+                            <b>Tail Shape</b>
+                            <span class="badge badge-danger ml-2" id="TailspinName"></span>
+                            <span id="tailspinShapeText"></span>
+                        </label>
+                        <input type="range" min="1" max="8" 
+                            class="form-control-range" id="tailspinShape">
+                    </div>
+                    <!-- Shape: Teeth -->
+                    <div class="form-group" id="teethShapeGroup">
+                        <label for="formControlRange">
+                            <b>Teeth Shape</b>
+                            <span class="badge badge-danger ml-2" id="TeethName"></span>
+                            <span id="teethShapeText"></span>
+                        </label>
+                        <input type="range" min="1" max="5" 
+                            class="form-control-range" id="teethShape">
+                    </div>
+                    <!-- Coin -->
+                    <div class="form-group" id="coinShapeGroup">
+                        <label for="formControlRange">
+                            <b>Cryptocurrency</b>
+                            <span class="badge badge-danger ml-2" id="CoinName"></span>
+                            <span id="coinShapeText"></span>
+                        </label>
+                        <input type="range" min="1" max="9" 
+                            class="form-control-range" id="coinShape">
+                    </div>
+                    <!-- Animation -->
+                    <div id="animationGroupMain">
+                        <!-- Animation On/Off Toggle Switch -->
+                            <div class="form-group d-flex align-self-center" id="animation-Switch-NoAnimation-Group">
+                                <label class="switch">
+                                    <input type="checkbox" id="animationSwitch2" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <label for="formSwitch" class="pt-1 pb-1 px-3">
+                                    <b>Animations On / Off</b>
+                                    <span class="badge badge-danger ml-2" id="AnimationSwitchName"></span>
+                                    <span id="animationText2" class="animationText2"></span>
+                                </label>
+                            </div>
+
+                        <!-- Animation Toggle Switches -->
+                        <div id="animationSwitchGroupMain">
+                            <div class="form-group d-flex align-self-center" id="animation-Switch-GlidingSquirrel-Group">
+                                <label class="switch">
+                                    <input type="checkbox"  id="animationSwitch3" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <label for="formSwitch" class="pt-1 pb-1 px-3">
+                                    <b>Gliding Squirrel</b>
+                                    <span class="badge badge-danger ml-2" id="AnimationSwitchName3"></span>
+                                    <span id="animationText3" class="animationText3"></span>
+                                </label>
+                            </div>
+                            <div class="form-group d-flex align-self-center" id="animation-Switch-MoveTail-Group">
+                                <label class="switch">
+                                    <input type="checkbox"  id="animationSwitch4" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <label for="formSwitch" class="pt-1 pb-1 px-3">
+                                    <b>Move Tail</b>
+                                    <span class="badge badge-danger ml-2" id="AnimationSwitchName4"></span>
+                                    <span id="animationText4" class="animationText4"></span>
+                                </label>
+                            </div>
+                            <div class="form-group d-flex align-self-center" id="animation-Switch-MoveEyes-Group">
+                                <label class="switch">
+                                    <input type="checkbox"  id="animationSwitch5">
+                                    <span class="slider round"></span>
+                                </label>
+                                <label for="formSwitch" class="pt-1 pb-1 px-3">
+                                    <b>Move Eyes</b>
+                                    <span class="badge badge-danger ml-2" id="AnimationSwitchName5"></span>
+                                    <span id="animationText5" class="animationText5"></span>
+                                </label>
+                            </div>
+                            <div class="form-group d-flex align-self-center" id="animation-Switch-MovePupils-Group">
+                                <label class="switch">
+                                    <input type="checkbox"  id="animationSwitch6">
+                                    <span class="slider round"></span>
+                                </label>
+                                <label for="formSwitch" class="pt-1 pb-1 px-3">
+                                    <b>Move Pupils</b>
+                                    <span class="badge badge-danger ml-2" id="AnimationSwitchName6"></span>
+                                    <span id="animationText6" class="animationText6"></span>
+                                </label>
+                            </div>
+                            <div class="form-group d-flex align-self-center" id="animation-Switch-MoveBelly-Group">
+                                <label class="switch">
+                                    <input type="checkbox"  id="animationSwitch7">
+                                    <span class="slider round"></span>
+                                </label>
+                                <label for="formSwitch" class="pt-1 pb-1 px-3">
+                                    <b>Move Belly</b>
+                                    <span class="badge badge-danger ml-2" id="AnimationSwitchName7"></span>
+                                    <span id="animationText7" class="animationText7"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Animation Presets -->
+                        <div class="form-group" id="animationGroup">
+                            <label for="formControlRange">
+                                <b>Background Animation Presets</b>
+                                <span class="badge badge-danger ml-2" id="AnimationBGName"></span>
+                                <span id="animationBGText"></span>
+                            </label>
+                            <input type="range" min="1" max="9" 
+                                class="form-control-range" id="animationBG">
+                        </div>
+                        
+                    </div>
+
+                    <br>
+                    <button id="randomize" type="button" class="btn btnRandomize">Randomize</button>
+                    <button id="default" type="button" class="btn btnDefault">Default</button>
+                    <button id="create" type="button" class="btn btnCreate">Create</button>
+                </div>
+            </div>
+<!-- ############################### -->
+<!-- END : Main Attributes Box -->
+<!-- ############################### -->
+        </div>
+<!-- ############################### -->
+<!-- END : Boxes Row -->
+<!-- ############################### -->
     </div>
-<br>
+<!-- ############################### -->
+<!-- END : Main Div -->
+<!-- ############################### -->
 
     <footer align="left">
         <p>Moralis Academy 2022</p>
@@ -223,9 +346,8 @@
 
 </body>
 
-
-  <script src="assets/js/colors.js"></script>
-  <script src="assets/js/catSettings.js"></script>
-  <script src="assets/js/catFactory.js"></script>
+<script src="assets/js/colors.js"></script>
+<script src="assets/js/squirrelSettings.js"></script>
+<script src="assets/js/squirrelFactory.js"></script>
 
 </html>

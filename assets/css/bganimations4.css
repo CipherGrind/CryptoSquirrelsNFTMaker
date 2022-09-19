@@ -1,0 +1,109 @@
+
+.moveBackground4{
+    animation: moveBackground4 5s infinite;
+}
+@keyframes moveBackground4 {
+    0% {
+        background-blend-mode:color-burn;
+        background-color: rgb(246, 0, 0);
+        background-image: repeating-radial-gradient(circle, rgb(57, 57, 57), black, rgb(165, 165, 165), 
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),);
+    }
+    20% {
+        background-blend-mode:darken;
+        background-color: rgb(28, 3, 76);
+        background-image: repeating-radial-gradient(circle, rgb(57, 57, 57), black, rgb(165, 165, 165), 
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), black,
+        black, rgb(57, 57, 57), black, rgb(165, 165, 165), black,
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        black, rgb(57, 57, 57), black, rgb(165, 165, 165), black,
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        black, rgb(57, 57, 57), black, rgb(165, 165, 165), black,
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),);
+    }
+    40% {
+        background-blend-mode:color-burn;
+        background-color: rgb(243, 9, 200);
+        background-image: repeating-radial-gradient(circle, rgb(57, 57, 57), black, rgb(165, 165, 165), 
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),);
+    }
+    60% {
+        background-blend-mode:darken;
+        background-color: rgb(69, 4, 4);
+        background-image: repeating-radial-gradient(circle, rgb(57, 57, 57), black, rgb(165, 165, 165), 
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),);
+    }
+    80% {
+        background-blend-mode:darken;
+        background-color: rgb(28, 3, 76);
+        background-image: repeating-radial-gradient(circle, rgb(57, 57, 57), black, rgb(165, 165, 165), 
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),);
+    }
+    100% {
+        background-blend-mode:color-burn;
+        background-color: rgb(246, 0, 0);
+        background-image: repeating-radial-gradient(circle, rgb(57, 57, 57), black, rgb(165, 165, 165), 
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),
+        rgb(90, 90, 90), rgb(57, 57, 57), black, rgb(165, 165, 165), rgb(90, 90, 90),);
+    }
+}
+
+/*#################################*/
+/*#################################*/
+/*#################################*/
+
+.moveBackground4b{
+    animation: moveBackground4b 5s infinite;
+}
+@keyframes moveBackground4b {
+    0% {
+        transform: scale(100%);
+        border-color: black;
+        border-width: 30px;
+        border-style: solid;
+    }
+    20% {
+        transform: scale(150%);
+        border-color: black;
+        border-width: 50px;
+        border-style: double;
+    }
+    40% {
+        transform: scale(130%);
+        border-color: black;
+        border-width: 60px;
+        border-style: dashed;
+    }
+    60% {
+        transform: scale(180%);
+        border-color: black;
+        border-width: 100px;
+        border-style: double;
+    }
+    80% {
+        transform: scale(160%);
+        border-color: black;
+        border-width: 80px;
+        border-style: dashed;
+    }
+    100% {
+        transform: scale(100%);
+        border-color: black;
+        border-width: 30px;
+        border-style: solid;
+    }
+}

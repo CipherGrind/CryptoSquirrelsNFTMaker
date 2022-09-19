@@ -1,0 +1,108 @@
+
+.moveBackground5{
+    animation: moveBackground5 10s infinite;
+}
+@keyframes moveBackground5 {
+    0% {
+        background-blend-mode:darken;
+        background-color: rgb(255, 0, 0);
+        background-image: repeating-conic-gradient(
+            rgb(255, 0, 0), rgb(168, 0, 0), rgb(255, 0, 0),
+             rgb(196, 29, 29), rgb(87, 0, 0)
+        );
+    }
+    20% {
+        background-blend-mode:darken;
+        background-color: rgb(168, 0, 0);
+        background-image: repeating-conic-gradient(
+            rgb(255, 0, 0), rgb(168, 0, 0), rgb(255, 0, 0),
+            rgb(196, 29, 29), rgb(87, 0, 0),
+            rgb(255, 0, 0), rgb(168, 0, 0), rgb(255, 0, 0),
+            rgb(196, 29, 29), rgb(87, 0, 0)
+        );
+    }
+    40% {
+        background-blend-mode:darken;
+        background-color: rgb(168, 0, 0);
+        background-image: repeating-conic-gradient(
+            rgb(255, 0, 0), rgb(168, 0, 0), rgb(255, 0, 0),
+            rgb(196, 29, 29), rgb(87, 0, 0)
+        );
+    }
+    60% {
+        background-blend-mode:darken;
+        background-color: rgb(168, 0, 0);
+        background-image: repeating-conic-gradient(
+            rgb(255, 0, 0), rgb(168, 0, 0), rgb(255, 0, 0),
+            rgb(196, 29, 29), rgb(87, 0, 0)
+        );
+    }
+    80% {
+        background-blend-mode:darken;
+        background-color: rgb(168, 0, 0);
+        background-image: repeating-conic-gradient(
+            rgb(255, 0, 0), rgb(168, 0, 0), rgb(255, 0, 0),
+            rgb(196, 29, 29), rgb(87, 0, 0),
+            rgb(255, 0, 0), rgb(168, 0, 0), rgb(255, 0, 0),
+            rgb(196, 29, 29), rgb(87, 0, 0)
+        );
+    }
+    100% {
+        background-blend-mode:darken;
+        background-color: rgb(255, 0, 0);
+        background-image: repeating-conic-gradient(
+            rgb(255, 0, 0), rgb(168, 0, 0), rgb(255, 0, 0),
+            rgb(196, 29, 29), rgb(87, 0, 0)
+        );
+    }
+}
+
+/*#################################*/
+/*#################################*/
+/*#################################*/
+
+.moveBackground5b{
+    animation: moveBackground5b 10s infinite;
+}
+@keyframes moveBackground5b {
+    0% {
+        transform: scale(140%);
+        border-color: rgb(255, 0, 0);
+        border-width: 40px;
+        border-style:groove;
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: scale(180%);
+        border-color: rgb(168, 0, 0);
+        border-width: 70px;
+        border-style:dashed;
+        transform: rotate(180deg);
+    }
+    40% {
+        transform: scale(160%);
+        border-color: rgb(255, 0, 0);
+        border-width: 50px;
+        border-style:groove;
+    }
+    60% {
+        transform: scale(190%);
+        border-color: rgb(255, 0, 0);
+        border-width: 50px;
+        border-style:dashed;
+    }
+    80% {
+        transform: scale(170%);
+        border-color: rgb(168, 0, 0);
+        border-width: 70px;
+        border-style:groove;
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: scale(140%);
+        border-color: rgb(255, 0, 0);
+        border-width: 40px;
+        border-style:groove;
+        transform: rotate(0deg);
+    }
+}

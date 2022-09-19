@@ -1,0 +1,118 @@
+
+.moveBackground8{
+    animation: moveBackground8 7s infinite;
+}
+@keyframes moveBackground8 {
+    0% {
+        background-blend-mode:hue;
+        background-color: blue;
+        background-image: repeating-conic-gradient(
+            red, blue, red, blue, red, blue, red, blue, red, blue
+        );
+    }
+    25% {
+        background-blend-mode:hue;
+        background-color: blue;
+        background-image: repeating-conic-gradient(
+        red, blue, red, blue, red, blue, red, blue, red, blue,
+        red, blue, red, blue,red, blue, red, blue,red, blue, red, blue
+        );
+    }
+    50% {
+        background-blend-mode:hue;
+        background-color: blue;
+        background-image: repeating-conic-gradient(
+        red, blue, red, blue, red, blue, red, blue, red
+        );
+    }
+    75% {
+        background-blend-mode:hue;
+        background-color: blue;
+        background-image: repeating-conic-gradient(
+            red, blue, red, blue, red, blue, red, blue, red, blue,
+            red, blue, red, blue,red, blue, red, blue
+        );
+    }
+    100% {
+        background-blend-mode:hue;
+        background-color: blue;
+        background-image: repeating-conic-gradient(
+            red, blue, red, blue, red, blue, red, blue, red, blue
+        );
+    }
+}
+
+
+.moveBackground8b{
+    animation: moveBackground8b 7s infinite;
+}
+    @keyframes moveBackground8b {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+
+            transform: rotate(180deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+}
+
+
+
+
+
+
+
+.moveBackground8c{
+    animation: moveBackground8c 7s infinite;
+}
+@keyframes moveBackground8c {
+    0% {
+        background-blend-mode:color-dodge;
+        background-color: rgb(20, 37, 34);
+        background-image: repeating-conic-gradient(
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61)
+        );
+    }
+    25% {
+        background-blend-mode:color-dodge;
+        background-color: rgb(24, 106, 95);
+        background-image: repeating-conic-gradient(
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61),
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61),
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61),
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61),
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61),
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61) 
+        );
+        background-size: -200px 200px;
+    }
+    50% {
+        background-blend-mode:color-dodge;
+        background-color: rgb(51, 17, 35);
+        background-image: repeating-conic-gradient(
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61), 
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61) 
+        );
+    }
+    75% {
+        background-blend-mode:color-dodge;
+        background-color: rgb(6, 39, 34);
+        background-image: repeating-conic-gradient(
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61), 
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61), 
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61), 
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61) 
+        );
+        background-size: 77px -88px;
+    }
+    100% {
+        background-blend-mode:color-dodge;
+        background-color: rgb(20, 37, 34);
+        background-image: repeating-conic-gradient(
+            rgb(32, 221, 155), rgb(61, 61, 61), rgb(32, 221, 155), rgb(61, 61, 61) 
+        );
+    }
+}

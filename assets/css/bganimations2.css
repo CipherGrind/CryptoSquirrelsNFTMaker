@@ -1,6 +1,6 @@
 
 .moveBackground2{
-    animation: moveBackground2 1.5s infinite;
+    animation: moveBackground2 3s infinite;
 }
 @keyframes moveBackground2 {
     0% {
@@ -49,7 +49,7 @@
 
 
 .rotateBG{
-    animation: rotateBG 1.5s infinite;
+    animation: rotateBG 3s infinite;
 }
 @keyframes rotateBG {
     0% {

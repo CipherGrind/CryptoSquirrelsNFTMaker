@@ -90,3 +90,15 @@
         transform: rotate(359deg);
     }
 }
+
+.moveBelly{
+    animation: moveBelly 1.5s infinite;
+}
+@keyframes moveBelly {
+    0% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}

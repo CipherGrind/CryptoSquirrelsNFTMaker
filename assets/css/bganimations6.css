@@ -1,0 +1,76 @@
+
+.moveBackground6{
+    animation: moveBackground6 20s infinite;
+}
+    @keyframes moveBackground6 {
+        0% {
+            background-color: #e5e5f7;
+            opacity: 1;
+            background-image: linear-gradient(-50deg, #e5e5f7 50%, rgb(0, 0, 0) 50% );
+            background-size: -100px -100px;
+        }
+        20% {
+            background-color: #e5e5f7;
+            opacity: 1;
+            background-image: linear-gradient(18deg, #000000 50%, rgb(255, 255, 255) 50% );
+            background-size: 37px 56px;
+        }
+        40% {
+            background-color: #e5e5f7;
+            opacity: 1;
+            background-image: linear-gradient(38deg, #000000 50%, rgb(255, 255, 255) 50% );
+            background-size: -220px -188px;
+        }
+        60% {
+            background-color: #e5e5f7;
+            opacity: 1;
+            background-image: linear-gradient(73deg, #e5e5f7 50%, rgb(0, 0, 0) 50% );
+            background-size: -77px -44px;
+        }
+        70% {
+            background-color: #e5e5f7;
+            opacity: 1;
+            background-image: linear-gradient(-19deg, #e5e5f7 50%, rgb(0, 0, 0) 50% );
+            background-size: -11px 99px;
+        }
+        80% {
+            background-color: #e5e5f7;
+            opacity: 1;
+            background-image: linear-gradient(33deg, #000000 50%, rgb(255, 255, 255) 50% );
+            background-size: 40px 155px;
+        }
+
+        100% {
+            background-color: #e5e5f7;
+            opacity: 1;
+            background-image: linear-gradient(-50deg, #e5e5f7 50%, rgb(0, 0, 0) 50% );
+            background-size: -100px -100px;
+        }
+}
+
+
+/*#################################*/
+/*#################################*/
+/*#################################*/
+
+
+.moveBackground6b{
+    animation: moveBackground6b 20s infinite;
+}
+    @keyframes moveBackground6b {
+        0% {
+            transform: scale(190%);
+            border-width: 10px;
+            border-color:black;
+        }
+        50% {
+            transform: scale(44%);
+            transform: rotate(122deg);
+            border-color:black;
+        }
+        100% {
+            transform: scale(190%);
+            border-width: 10px;
+            border-color:black;
+        }
+}
