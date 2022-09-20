@@ -515,7 +515,6 @@
             $('#dnaanimationswitch7').html(0)
             $('#AnimationSwitchName7').html('Off')
             $('#animationText7').html(0)
-            $("#animationGroup").hide();
             $("#animationSwitchGroupMain").hide();
         }
         });
